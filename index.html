@@ -4,55 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMoji Facebook - Gif</title>
     <link rel="stylesheet" href="./style.css" />
-    <title>Emoji Facebook</title>
   </head>
   <body>
-    <div class="emoji emoji--like">
-      <div class="emoji__hand">
-        <div class="emoji__thumb"></div>
-      </div>
-    </div>
-
-    <div class="emoji emoji--love">
-      <div class="emoji__heart"></div>
-    </div>
-
-    <div class="emoji emoji--haha">
-      <div class="emoji__face">
-        <div class="emoji__eyes"></div>
-        <div class="emoji__mouth">
-          <div class="emoji__tongue"></div>
+    <div class="component-action-message">
+      <div class="action-message-wrap">
+        <div class="action-emoji">
+          <div class="react-emoji-wrap hide" id="react-emoji-wrap">
+            <div class="emoji emoji--like">
+              <img src="./gif/like.gif" alt="" />
+            </div>
+            <div class="emoji emoji--love">
+              <img src="./gif/heart.gif" alt="" />
+            </div>
+            <div class="emoji emoji--haha">
+              <img src="./gif/haha.gif" alt="" />
+            </div>
+            <div class="emoji emoji--wow">
+              <img src="./gif/wow.gif" alt="" />
+            </div>
+            <div class="emoji emoji--sad">
+              <img src="./gif/sad.gif" alt="" />
+            </div>
+            <div class="emoji emoji--angry">
+              <img src="./gif/angry.gif" alt="" />
+            </div>
+          </div>
+          <svg height="22px" viewBox="0 0 22 22" width="22px">
+            <circle
+              stroke="#65676b"
+              fill="none"
+              cx="11"
+              cy="11"
+              r="7"
+              stroke-width="1.5px"
+            ></circle>
+            <path
+              stroke="#65676b"
+              fill="none"
+              d="M8,13Q11,16,14,13"
+              stroke-width="1.5px"
+            ></path>
+            <circle fill="#65676b" cx="9" cy="10" r="1.2"></circle>
+            <circle fill="#65676b" cx="13" cy="10" r="1.2"></circle>
+          </svg>
+        </div>
+        <div class="action-reply">
+          <svg height="22px" viewBox="1 1 21 21" width="22px">
+            <g fill="#65676B" fill-rule="evenodd" stroke-width="1">
+              <path
+                d="M10.8932368,14.7625445 C10.8932368,15.535432 10.0849567,15.996442 9.48116675,15.5677995 L4.03193175,11.696707 C3.49257425,11.313742 3.49287675,10.4694645 4.03193175,10.0864995 L9.48116675,6.2157095 C10.0849567,5.7867645 10.8932368,6.248077 10.8932368,7.020662 L10.8938418,9.0755445 C15.2129368,9.0755445 18.1517243,11.027577 18.1523293,15.7226795 C18.1523293,16.0820495 17.9036743,16.3349395 17.5273643,16.3349395 C17.2487618,16.3349395 17.0164418,16.1746145 16.8527893,15.680027 C16.1588543,13.584307 14.1063918,12.7049395 10.8938418,12.7049395 L10.8932368,14.7625445 Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="action-more">
+          <svg height="22px" viewBox="0 0 22 22" width="22px">
+            <circle
+              cx="11"
+              cy="6"
+              fill="#65676B"
+              r="2"
+              stroke-width="1px"
+            ></circle>
+            <circle
+              cx="11"
+              cy="11"
+              fill="#65676B"
+              r="2"
+              stroke-width="1px"
+            ></circle>
+            <circle
+              cx="11"
+              cy="16"
+              fill="#65676B"
+              r="2"
+              stroke-width="1px"
+            ></circle>
+          </svg>
         </div>
       </div>
     </div>
 
-    <div class="emoji emoji--yay">
-      <div class="emoji__face">
-        <div class="emoji__eyebrows"></div>
-        <div class="emoji__mouth"></div>
-      </div>
-    </div>
-    <div class="emoji emoji--wow">
-      <div class="emoji__face">
-        <div class="emoji__eyebrows"></div>
-        <div class="emoji__eyes"></div>
-        <div class="emoji__mouth"></div>
-      </div>
-    </div>
-    <div class="emoji emoji--sad">
-      <div class="emoji__face">
-        <div class="emoji__eyebrows"></div>
-        <div class="emoji__eyes"></div>
-        <div class="emoji__mouth"></div>
-      </div>
-    </div>
-    <div class="emoji emoji--angry">
-      <div class="emoji__face">
-        <div class="emoji__eyebrows"></div>
-        <div class="emoji__eyes"></div>
-        <div class="emoji__mouth"></div>
-      </div>
-    </div>
+    <script src="./jquery-1.7.1.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
